@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="bhc">
+      <UniqueIdentifier>{963d4e9f-1123-4b5a-94f5-ba71c986d270}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mode">
+      <UniqueIdentifier>{c5c07cf3-ab03-4f8b-b793-b0762cd7ad21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module">
+      <UniqueIdentifier>{f38bae62-d831-4077-af8d-0aee4070ae50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{863dd66a-edcd-4298-94ab-8247fa54a54e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bhc\bhc.hpp">
+      <Filter>bhc</Filter>
+    </ClInclude>
+    <ClInclude Include="bhc\math.hpp">
+      <Filter>bhc</Filter>
+    </ClInclude>
+    <ClInclude Include="bhc\platform.hpp">
+      <Filter>bhc</Filter>
+    </ClInclude>
+    <ClInclude Include="bhc\structs.hpp">
+      <Filter>bhc</Filter>
+    </ClInclude>
+    <ClInclude Include="mode\arr.hpp">
+      <Filter>mode</Filter>
+    </ClInclude>
+    <ClInclude Include="mode\eigen.hpp">
+      <Filter>mode</Filter>
+    </ClInclude>
+    <ClInclude Include="mode\field.hpp">
+      <Filter>mode</Filter>
+    </ClInclude>
+    <ClInclude Include="mode\fieldimpl.h">
+      <Filter>mode</Filter>
+    </ClInclude>
+    <ClInclude Include="mode\modemodule.hpp">
+      <Filter>mode</Filter>
+    </ClInclude>
+    <ClInclude Include="mode\ray.hpp">
+      <Filter>mode</Filter>
+    </ClInclude>
+    <ClInclude Include="mode\tl.hpp">
+      <Filter>mode</Filter>
+    </ClInclude>
+    <ClInclude Include="module\atten.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="module\beaminfo.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="module\botopt.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="module\boundary.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="module\boundarycond.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="module\freq0.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="module\freqvec.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="module\nmedia.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="module\paramsmodule.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="module\rayangles.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="module\rcvrbearings.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="module\rcvrranges.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="module\reflcoef.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="module\runtype.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="module\sbp.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="module\ssp.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="module\sxsy.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="module\szrz.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="module\title.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="module\topopt.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="util\atomics.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\directio.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\errors.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\ldio.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\prtfileemu.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\timing.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\unformattedio.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\UtilsCUDA.cuh">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="bhc_define_header.h" />
+    <ClInclude Include="arrivals.hpp" />
+    <ClInclude Include="boundary.hpp" />
+    <ClInclude Include="common.hpp" />
+    <ClInclude Include="common_run.hpp" />
+    <ClInclude Include="common_setup.hpp" />
+    <ClInclude Include="curves.hpp" />
+    <ClInclude Include="eigenrays.hpp" />
+    <ClInclude Include="influence.hpp" />
+    <ClInclude Include="reflect.hpp" />
+    <ClInclude Include="runtype.hpp" />
+    <ClInclude Include="ssp.hpp" />
+    <ClInclude Include="step.hpp" />
+    <ClInclude Include="trace.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="mode\arr.cpp">
+      <Filter>mode</Filter>
+    </ClCompile>
+    <ClCompile Include="mode\eigen.cpp">
+      <Filter>mode</Filter>
+    </ClCompile>
+    <ClCompile Include="mode\field.cpp">
+      <Filter>mode</Filter>
+    </ClCompile>
+    <ClCompile Include="mode\ray.cpp">
+      <Filter>mode</Filter>
+    </ClCompile>
+    <ClCompile Include="mode\tl.cpp">
+      <Filter>mode</Filter>
+    </ClCompile>
+    <ClCompile Include="module\atten.cpp">
+      <Filter>module</Filter>
+    </ClCompile>
+    <ClCompile Include="util\errors.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\timing.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="api.cpp" />
+    <ClCompile Include="cmdline.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mode\fieldimpl.cu">
+      <Filter>mode</Filter>
+    </None>
+  </ItemGroup>
+</Project>

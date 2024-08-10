@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F3FE8CCC-8E00-4D1F-981C-767B6C732815}</ProjectGuid>
+    <RootNamespace>bellhop_cuda_windows</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 12.3.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;WIN64;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;WIN64;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="api.cpp" />
+    <ClCompile Include="cmdline.cu" />
+    <ClCompile Include="mode\arr.cpp" />
+    <ClCompile Include="mode\eigen.cpp" />
+    <ClCompile Include="mode\field.cpp" />
+    <ClCompile Include="mode\ray.cpp" />
+    <ClCompile Include="mode\tl.cpp" />
+    <ClCompile Include="module\atten.cpp" />
+    <ClCompile Include="util\errors.cpp" />
+    <ClCompile Include="util\timing.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="arrivals.hpp" />
+    <ClInclude Include="bhc\bhc.hpp" />
+    <ClInclude Include="bhc\math.hpp" />
+    <ClInclude Include="bhc\platform.hpp" />
+    <ClInclude Include="bhc\structs.hpp" />
+    <ClInclude Include="bhc_define_header.h" />
+    <ClInclude Include="boundary.hpp" />
+    <ClInclude Include="common.hpp" />
+    <ClInclude Include="common_run.hpp" />
+    <ClInclude Include="common_setup.hpp" />
+    <ClInclude Include="curves.hpp" />
+    <ClInclude Include="eigenrays.hpp" />
+    <ClInclude Include="influence.hpp" />
+    <ClInclude Include="mode\arr.hpp" />
+    <ClInclude Include="mode\eigen.hpp" />
+    <ClInclude Include="mode\field.hpp" />
+    <ClInclude Include="mode\fieldimpl.h" />
+    <ClInclude Include="mode\modemodule.hpp" />
+    <ClInclude Include="mode\ray.hpp" />
+    <ClInclude Include="mode\tl.hpp" />
+    <ClInclude Include="module\atten.hpp" />
+    <ClInclude Include="module\beaminfo.hpp" />
+    <ClInclude Include="module\botopt.hpp" />
+    <ClInclude Include="module\boundary.hpp" />
+    <ClInclude Include="module\boundarycond.hpp" />
+    <ClInclude Include="module\freq0.hpp" />
+    <ClInclude Include="module\freqvec.hpp" />
+    <ClInclude Include="module\nmedia.hpp" />
+    <ClInclude Include="module\paramsmodule.hpp" />
+    <ClInclude Include="module\rayangles.hpp" />
+    <ClInclude Include="module\rcvrbearings.hpp" />
+    <ClInclude Include="module\rcvrranges.hpp" />
+    <ClInclude Include="module\reflcoef.hpp" />
+    <ClInclude Include="module\runtype.hpp" />
+    <ClInclude Include="module\sbp.hpp" />
+    <ClInclude Include="module\ssp.hpp" />
+    <ClInclude Include="module\sxsy.hpp" />
+    <ClInclude Include="module\szrz.hpp" />
+    <ClInclude Include="module\title.hpp" />
+    <ClInclude Include="module\topopt.hpp" />
+    <ClInclude Include="reflect.hpp" />
+    <ClInclude Include="runtype.hpp" />
+    <ClInclude Include="ssp.hpp" />
+    <ClInclude Include="step.hpp" />
+    <ClInclude Include="trace.hpp" />
+    <ClInclude Include="util\atomics.hpp" />
+    <ClInclude Include="util\directio.hpp" />
+    <ClInclude Include="util\errors.hpp" />
+    <ClInclude Include="util\ldio.hpp" />
+    <ClInclude Include="util\prtfileemu.hpp" />
+    <ClInclude Include="util\timing.hpp" />
+    <ClInclude Include="util\unformattedio.hpp" />
+    <ClInclude Include="util\UtilsCUDA.cuh" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mode\fieldimpl.cu" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 12.3.targets" />
+  </ImportGroup>
+</Project>

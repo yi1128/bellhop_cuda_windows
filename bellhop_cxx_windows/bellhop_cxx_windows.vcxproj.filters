@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="bhc">
+      <UniqueIdentifier>{0d2c5960-bf01-42a8-aafb-44af362f7551}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mode">
+      <UniqueIdentifier>{cf43fef0-ba53-4e13-959b-746637e6ea9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module">
+      <UniqueIdentifier>{3808fd82-9a58-4f82-992e-894aacee5ab4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{8b1d98f3-7ea9-4608-a5d7-2b16e4850f90}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\bellhop_cuda_windows\api.cpp" />
+    <ClCompile Include="..\bellhop_cuda_windows\cmdline.cpp" />
+    <ClCompile Include="..\bellhop_cuda_windows\mode\arr.cpp">
+      <Filter>mode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bellhop_cuda_windows\mode\eigen.cpp">
+      <Filter>mode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bellhop_cuda_windows\mode\field.cpp">
+      <Filter>mode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bellhop_cuda_windows\mode\ray.cpp">
+      <Filter>mode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bellhop_cuda_windows\mode\tl.cpp">
+      <Filter>mode</Filter>
+    </ClCompile>
+    <ClCompile Include="mode\fieldimpl.cpp">
+      <Filter>mode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bellhop_cuda_windows\module\atten.cpp">
+      <Filter>module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bellhop_cuda_windows\util\errors.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bellhop_cuda_windows\util\timing.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\bellhop_cuda_windows\arrivals.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\boundary.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\common.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\common_run.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\common_setup.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\curves.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\eigenrays.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\influence.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\reflect.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\runtype.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\ssp.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\step.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\trace.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\bhc\bhc.hpp">
+      <Filter>bhc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\bhc\math.hpp">
+      <Filter>bhc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\bhc\platform.hpp">
+      <Filter>bhc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\bhc\structs.hpp">
+      <Filter>bhc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\mode\arr.hpp">
+      <Filter>mode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\mode\eigen.hpp">
+      <Filter>mode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\mode\field.hpp">
+      <Filter>mode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\mode\modemodule.hpp">
+      <Filter>mode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\mode\ray.hpp">
+      <Filter>mode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\mode\tl.hpp">
+      <Filter>mode</Filter>
+    </ClInclude>
+    <ClInclude Include="mode\fieldimpl.hpp">
+      <Filter>mode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\module\atten.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\module\beaminfo.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\module\botopt.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\module\boundary.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\module\boundarycond.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\module\freq0.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\module\freqvec.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\module\nmedia.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\module\paramsmodule.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\module\rayangles.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\module\rcvrbearings.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\module\rcvrranges.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\module\reflcoef.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\module\runtype.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\module\sbp.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\module\ssp.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\module\sxsy.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\module\szrz.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\module\title.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\module\topopt.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\util\atomics.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\util\directio.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\util\errors.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\util\ldio.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\util\prtfileemu.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\util\timing.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\util\unformattedio.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

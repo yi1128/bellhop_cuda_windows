@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{5fe37e52-303b-4b5c-b1d6-02a3317d3969}</ProjectGuid>
+    <RootNamespace>bellhopcxxwindows</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>../</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\bellhop_cuda_windows\api.cpp" />
+    <ClCompile Include="..\bellhop_cuda_windows\cmdline.cpp" />
+    <ClCompile Include="..\bellhop_cuda_windows\mode\arr.cpp" />
+    <ClCompile Include="..\bellhop_cuda_windows\mode\eigen.cpp" />
+    <ClCompile Include="..\bellhop_cuda_windows\mode\field.cpp" />
+    <ClCompile Include="..\bellhop_cuda_windows\mode\ray.cpp" />
+    <ClCompile Include="..\bellhop_cuda_windows\mode\tl.cpp" />
+    <ClCompile Include="..\bellhop_cuda_windows\module\atten.cpp" />
+    <ClCompile Include="..\bellhop_cuda_windows\util\errors.cpp" />
+    <ClCompile Include="..\bellhop_cuda_windows\util\timing.cpp" />
+    <ClCompile Include="mode\fieldimpl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\bellhop_cuda_windows\arrivals.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\bhc\bhc.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\bhc\math.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\bhc\platform.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\bhc\structs.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\boundary.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\common.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\common_run.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\common_setup.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\curves.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\eigenrays.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\influence.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\mode\arr.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\mode\eigen.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\mode\field.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\mode\modemodule.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\mode\ray.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\mode\tl.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\module\atten.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\module\beaminfo.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\module\botopt.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\module\boundary.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\module\boundarycond.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\module\freq0.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\module\freqvec.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\module\nmedia.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\module\paramsmodule.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\module\rayangles.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\module\rcvrbearings.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\module\rcvrranges.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\module\reflcoef.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\module\runtype.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\module\sbp.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\module\ssp.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\module\sxsy.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\module\szrz.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\module\title.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\module\topopt.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\reflect.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\runtype.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\ssp.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\step.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\trace.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\util\atomics.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\util\directio.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\util\errors.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\util\ldio.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\util\prtfileemu.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\util\timing.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\util\unformattedio.hpp" />
+    <ClInclude Include="mode\fieldimpl.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

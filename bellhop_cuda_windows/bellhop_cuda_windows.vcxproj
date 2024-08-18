@@ -59,6 +59,7 @@
     </Link>
     <CudaCompile>
       <TargetMachinePlatform>64</TargetMachinePlatform>
+      <CodeGeneration>compute_70,sm_70</CodeGeneration>
     </CudaCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -82,7 +83,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="api.cpp" />
-    <ClCompile Include="cmdline.cu" />
+    <ClCompile Include="cmdline.cpp" />
     <ClCompile Include="mode\arr.cpp" />
     <ClCompile Include="mode\eigen.cpp" />
     <ClCompile Include="mode\field.cpp" />
@@ -148,7 +149,9 @@
     <ClInclude Include="util\UtilsCUDA.cuh" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="mode\fieldimpl.cu" />
+    <CudaCompile Include="mode\fieldimpl.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

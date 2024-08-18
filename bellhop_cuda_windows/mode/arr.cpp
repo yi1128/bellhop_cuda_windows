@@ -1,4 +1,4 @@
-
+/*
 #include "arr.hpp"
 #include "../common_run.hpp"
 
@@ -421,3 +421,4 @@ template void ReadOutArrivals<true, true>(
 #endif
 
 }} // namespace bhc::mode
+*/

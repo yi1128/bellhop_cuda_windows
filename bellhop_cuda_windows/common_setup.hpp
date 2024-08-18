@@ -155,6 +155,7 @@ template<bool O3D, typename T> inline void trackdeallocate(
 template<bool O3D, typename T> inline void trackallocate(
     const bhcParams<O3D> &params, const char *description, T *&ptr, size_t n = 1)
 {
+    std::atomic_bool allocStatus(TRUE);
     if(ptr != nullptr) trackdeallocate(params, ptr);
     uint64_t *ptr2;
     uint64_t s  = ((n * sizeof(T)) + 15ull) & ~15ull; // Round up to 16 byte aligned
@@ -170,6 +171,7 @@ template<bool O3D, typename T> inline void trackallocate(
     if (cudaStatus != cudaSuccess) {
         // Need Log!!
         std::cerr << "cudaMallocManaged failed!" << std::endl;
+        allocStatus.store(FALSE);
         goto Error;
     }
 #else
@@ -184,8 +186,11 @@ template<bool O3D, typename T> inline void trackallocate(
 #endif
 
 #ifdef BHC_BUILD_CUDA
-Error:
-    cudaFree(ptr2);
+    Error:
+    if (allocStatus.load() == FALSE) {
+        std::cerr << "cudaMalloc Error!! Now Release Memory [cudaFree(ptr2]" << std::endl;
+        cudaFree(ptr2);
+    }
 #endif
 }
 

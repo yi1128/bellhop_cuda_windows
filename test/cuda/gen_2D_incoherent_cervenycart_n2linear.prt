@@ -1,0 +1,95 @@
+bellhop_cuda_windows
+
+bellhop_cuda_windows- Gen: 2D, incoherent, cervenycart, n2linear
+ frequency =  5.0000e+01 Hz
+Dummy parameter NMedia = 1
+
+    N2-linear approximation to SSP
+    Attenuation units: dB/wavelength
+    VACUUM
+
+  Depth =   5.00e+03  m
+
+Sound speed profile:
+      z         alphaR      betaR     rho        alphaI     betaI
+     (m)         (m/s)      (m/s)   (g/cm^3)      (m/s)     (m/s)
+0.00e+00 1.55e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+1.23e+03 1.50e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+5.00e+03 1.56e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+
+ RMS roughness =  0.000e+00
+    Perfectly RIGID
+
+__________________________________________________________________________
+
+   Number of Source   z-coordinates, Sz = 2
+   Source   z-coordinates, Sz (m)
+     3.470000e+02   6.820000e+02 
+
+
+__________________________________________________________________________
+
+   Number of Receiver z-coordinates, Rz = 51
+   Receiver z-coordinates, Rz (m)
+     0.000000e+00   1.000000e+02   2.000000e+02   3.000000e+02   4.000000e+02 
+     5.000000e+02   6.000000e+02   7.000000e+02   8.000000e+02   9.000000e+02 
+   ...   5.000000e+03
+
+
+__________________________________________________________________________
+
+   Number of Receiver r-coordinates, Rr = 51
+   Receiver r-coordinates, Rr (km)
+     0.000000e+00   2.000000e+00   4.000000e+00   6.000000e+00   8.000000e+00 
+     1.000000e+01   1.200000e+01   1.400000e+01   1.600000e+01   1.800000e+01 
+   ...   1.000000e+02
+
+
+Incoherent TL calculation
+Cartesian beams
+Point source (cylindrical coordinates)
+Rectilinear receiver grid: Receivers at Rr[:] x Rz[:]
+__________________________________________________________________________
+
+   Number of beams in elevation   = 21
+   Beam take-off angles (degrees)
+ -5.120000e+01  -4.608000e+01  -4.096000e+01  -3.584000e+01  -3.072000e+01 
+ -2.560000e+01  -2.048000e+01  -1.536000e+01  -1.024000e+01  -5.120000e+00 
+...   5.120000e+01
+
+__________________________________________________________________________
+
+
+ Step length,       deltas =  1.0000e+03 m
+
+Maximum ray depth, Box.y  =  5.5000e+03 m
+Maximum ray range, Box.x  =  1.0100e+02km
+
+Minimum width beams
+No beam shift in effect
+
+
+Type of beam = C
+Standard curvature condition
+Epsilon multiplier 1.0000e+00
+Range for choosing beam width 1.0000e+02
+
+Number of images, Nimage  = 1
+Beam windowing parameter  = 4
+Component                 = P
+
+Piecewise linear interpolation
+Number of altimetry points = 2
+
+ Range (km)  Depth (m)
+Piecewise linear interpolation
+Number of bathymetry points = 2
+Short format (bathymetry only)
+
+ Range (km)  Depth (m)
+Number of source beam pattern points 2
+
+ Angle (degrees)  Power (dB)
+-1.800e+02 0.000e+00
+1.800e+02 0.000e+00
+

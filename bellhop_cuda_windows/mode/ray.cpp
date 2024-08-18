@@ -1,3 +1,4 @@
+/*
 #include "ray.hpp"
 #include "../trace.hpp"
 #include "../module/title.hpp"
@@ -347,3 +348,4 @@ template void ReadOutRay<true, true>(
 #endif
 
 }} // namespace bhc::mode
+*/

@@ -1,0 +1,5 @@
+bellhop_windows
+
+gen_2D_incoherent_cervenycart_n2linear
+
+bellhop_cuda_windows.exe -2 --mem=8G ../test/cuda/gen_2D_incoherent_cervenycart_n2linear

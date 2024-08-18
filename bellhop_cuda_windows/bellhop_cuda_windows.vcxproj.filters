@@ -173,11 +173,11 @@
       <Filter>util</Filter>
     </ClCompile>
     <ClCompile Include="api.cpp" />
-    <ClCompile Include="cmdline.cu" />
+    <ClCompile Include="cmdline.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="mode\fieldimpl.cu">
+    <CudaCompile Include="mode\fieldimpl.cu">
       <Filter>mode</Filter>
-    </None>
+    </CudaCompile>
   </ItemGroup>
 </Project>

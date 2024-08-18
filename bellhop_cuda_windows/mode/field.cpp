@@ -1,5 +1,6 @@
-
+/*
 #include "field.hpp"
+
 #include "./bellhop_cuda_windows/common_run.hpp"
 
 namespace bhc { namespace mode {
@@ -10,19 +11,22 @@ template<char RT, char IT, bool O3D, bool R3D> inline void RunFieldModesSelSSP(
     char st = params.ssp->Type;
     if(st == 'N') {
 #ifdef BHC_SSP_ENABLE_N2LINEAR
-        RunFieldModesImpl<CfgSel<RT, IT, 'N'>, O3D, R3D>(params, outputs);
+        //RunFieldModesImpl<CfgSel<RT, IT, 'N'>, O3D, R3D>(params, outputs);
+        RunFieldModesImplLaunch(params, outputs);
 #else
         EXTERR("N2-linear SSP (ssp->Type == 'N') was not enabled at compile time!");
 #endif
     } else if(st == 'C') {
 #ifdef BHC_SSP_ENABLE_CLINEAR
-        RunFieldModesImpl<CfgSel<RT, IT, 'C'>, O3D, R3D>(params, outputs);
+        //RunFieldModesImpl<CfgSel<RT, IT, 'C'>, O3D, R3D>(params, outputs);
+        RunFieldModesImplLaunch(params, outputs);
 #else
         EXTERR("C-linear SSP (ssp->Type == 'C') was not enabled at compile time!");
 #endif
     } else if(st == 'S') {
 #ifdef BHC_SSP_ENABLE_CUBIC
-        RunFieldModesImpl<CfgSel<RT, IT, 'S'>, O3D, R3D>(params, outputs);
+        //RunFieldModesImpl<CfgSel<RT, IT, 'S'>, O3D, R3D>(params, outputs);
+        RunFieldModesImplLaunch(params, outputs);
 #else
         EXTERR("Cubic spline SSP (ssp->Type == 'S') was not enabled at compile time!");
 #endif
@@ -31,7 +35,8 @@ template<char RT, char IT, bool O3D, bool R3D> inline void RunFieldModesSelSSP(
 #ifdef BHC_LIMIT_FEATURES
         if constexpr(!O3D) {
 #endif
-            RunFieldModesImpl<CfgSel<RT, IT, 'P'>, O3D, R3D>(params, outputs);
+            //RunFieldModesImpl<CfgSel<RT, IT, 'P'>, O3D, R3D>(params, outputs);
+            RunFieldModesImplLaunch(params, outputs);
 #ifdef BHC_LIMIT_FEATURES
         } else {
             EXTERR("Nx2D or 3D PCHIP SSP not supported"
@@ -44,7 +49,8 @@ template<char RT, char IT, bool O3D, bool R3D> inline void RunFieldModesSelSSP(
     } else if(st == 'Q') {
 #ifdef BHC_SSP_ENABLE_QUAD
         if constexpr(!O3D) {
-            RunFieldModesImpl<CfgSel<RT, IT, 'Q'>, O3D, R3D>(params, outputs);
+            //RunFieldModesImplLaunch<CfgSel<RT, IT, 'Q'>, O3D, R3D>(params, outputs);
+            RunFieldModesImplLaunch(params, outputs);
         } else {
             EXTERR("Quad SSP not supported in Nx2D or 3D mode!");
         }
@@ -54,7 +60,8 @@ template<char RT, char IT, bool O3D, bool R3D> inline void RunFieldModesSelSSP(
     } else if(st == 'H') {
 #ifdef BHC_SSP_ENABLE_HEXAHEDRAL
         if constexpr(O3D) {
-            RunFieldModesImpl<CfgSel<RT, IT, 'H'>, O3D, R3D>(params, outputs);
+            //RunFieldModesImpl<CfgSel<RT, IT, 'H'>, O3D, R3D>(params, outputs);
+            RunFieldModesImplLaunch(params, outputs);
         } else {
             EXTERR("Hexahedral SSP not supported in 2D mode!");
         }
@@ -63,7 +70,8 @@ template<char RT, char IT, bool O3D, bool R3D> inline void RunFieldModesSelSSP(
 #endif
     } else if(st == 'A') {
 #ifdef BHC_SSP_ENABLE_ANALYTIC
-        RunFieldModesImpl<CfgSel<RT, IT, 'A'>, O3D, R3D>(params, outputs);
+        //RunFieldModesImpl<CfgSel<RT, IT, 'A'>, O3D, R3D>(params, outputs);
+        RunFieldModesImplLaunch(params, outputs);
 #else
         EXTERR("Analytic SSP (ssp->Type == 'A') was not enabled at compile time!");
 #endif
@@ -210,3 +218,4 @@ template void RunFieldModesSelInfl<true, true>(
 #endif
 
 }} // namespace bhc::mode
+*/

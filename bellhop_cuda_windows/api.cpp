@@ -1,3 +1,4 @@
+
 #include "common_setup.hpp"
 
 #include "module/paramsmodule.hpp"
@@ -158,19 +159,19 @@ template<bool O3D> void setupGPU(const bhcParams<O3D> &params)
                 "CUDA device: %s / compute %d.%d", cudaProperties.name,
                 cudaProperties.major, cudaProperties.minor);
         }
-        /*
-        EXTWARN("%s GPU %d: %s, compute SM %d.%d",
-            (g == GetInternal(params)->gpuIndex) ? "-->" : "   "
-            g, cudaProperties.name, cudaProperties.major, cudaProperties.minor);
-        EXTWARN("      --Global/shared/constant memory: %lli, %d, %d",
-            cudaProperties.totalGlobalMem,
-            cudaProperties.sharedMemPerBlock,
-            cudaProperties.totalConstMem);
-        EXTWARN("      --Warp/threads/SMPs: %d, %d, %d" ,
-            cudaProperties.warpSize,
-            cudaProperties.maxThreadsPerBlock,
-            cudaProperties.multiProcessorCount);
-        */
+        
+        //EXTWARN("%s GPU %d: %s, compute SM %d.%d",
+        //    (g == GetInternal(params)->gpuIndex) ? "-->" : "   "
+        //    g, cudaProperties.name, cudaProperties.major, cudaProperties.minor);
+        //EXTWARN("      --Global/shared/constant memory: %lli, %d, %d",
+        //    cudaProperties.totalGlobalMem,
+        //    cudaProperties.sharedMemPerBlock,
+        //    cudaProperties.totalConstMem);
+        //EXTWARN("      --Warp/threads/SMPs: %d, %d, %d" ,
+        //    cudaProperties.warpSize,
+        //    cudaProperties.maxThreadsPerBlock,
+        //    cudaProperties.multiProcessorCount);
+        
     }
 
     // Store properties about used GPU
@@ -181,10 +182,10 @@ template<bool O3D> void setupGPU(const bhcParams<O3D> &params)
             std::cerr << "cudaGetDeviceProperties failed!" << std::endl;
         }
     }
-    /*
-    GetInternal(params)->d_warp       = cudaProperties.warpSize;
-    GetInternal(params)->d_maxthreads = cudaProperties.maxThreadsPerBlock;
-    */
+    
+    //GetInternal(params)->d_warp       = cudaProperties.warpSize;
+    //GetInternal(params)->d_maxthreads = cudaProperties.maxThreadsPerBlock;
+    
     GetInternal(params)->d_multiprocs = cudaProperties.multiProcessorCount;
     
     {

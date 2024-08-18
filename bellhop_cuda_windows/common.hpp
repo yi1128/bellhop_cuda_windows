@@ -78,7 +78,8 @@
 #include <cuda/std/cfloat>
 #include <cuda/std/atomic>
 #define STD cuda::std
-#define BHC_PROGRAMNAME "bellhopcuda"
+//#define BHC_PROGRAMNAME "bellhopcuda"
+#define BHC_PROGRAMNAME "bellhop_cuda_windows"
 #else
 #define HOST_DEVICE
 #include <atomic>

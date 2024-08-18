@@ -1,3 +1,4 @@
+/*
 #include "tl.hpp"
 #include "../trace.hpp"
 #include "../module/title.hpp"
@@ -5,18 +6,18 @@
 
 namespace bhc { namespace mode {
 
-/**
- * Write header to disk file
- * LP: of a SHDFile ("binary `shade' file (SHDFIL) that contains calculated
- * pressure fields")
- *
- * FileName: Name of the file (could be a shade file or a Green's function file)
- * Title: Arbitrary title
- * freq0: Nominal frequency [LP: now in freqinfo]
- * atten: stabilizing attenuation (for wavenumber integration only)
- * PlotType: If "TL", writes only first and last Sx and Sy [LP: never set to
- * "TL" in BELLHOP]
- */
+
+ //* Write header to disk file
+ //* LP: of a SHDFile ("binary `shade' file (SHDFIL) that contains calculated
+ //* pressure fields")
+ //*
+ //* FileName: Name of the file (could be a shade file or a Green's function file)
+ //* Title: Arbitrary title
+ //* freq0: Nominal frequency [LP: now in freqinfo]
+ //* atten: stabilizing attenuation (for wavenumber integration only)
+ //* PlotType: If "TL", writes only first and last Sx and Sy [LP: never set to
+ //* "TL" in BELLHOP]
+ 
 template<bool O3D> inline void WriteHeader(
     const bhcParams<O3D> &params, DirectOFile &SHDFile, float atten,
     const std::string &PlotType)
@@ -82,9 +83,9 @@ template<bool O3D> inline void WriteHeader(
     DOFWRITE(SHDFile, Pos->Rr, Pos->NRr * sizeof(Pos->Rr[0]));
 }
 
-/**
- * LP: Write TL results
- */
+
+ //* LP: Write TL results
+ 
 template<bool O3D, bool R3D> void PostProcessTL(
     const bhcParams<O3D> &params, bhcOutputs<O3D, R3D> &outputs)
 {
@@ -187,9 +188,9 @@ template<bool O3D> inline size_t GetRecNum(
     // clang-format on
 }
 
-/**
- * LP: Write TL results
- */
+
+ //* LP: Write TL results
+ 
 template<bool O3D, bool R3D> void WriteOutTL(
     const bhcParams<O3D> &params, const bhcOutputs<O3D, R3D> &outputs)
 {
@@ -358,3 +359,4 @@ template void ReadOutTL<true, true>(
 #endif
 
 }} // namespace bhc::mode
+*/

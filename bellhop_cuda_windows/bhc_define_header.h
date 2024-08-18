@@ -70,12 +70,12 @@
 
 //****************** INFLUENCE Type ******************//
 // 설명 : Enable Cerveny     ray-centered influence (Type == 'R')
-#define BHC_INFL_ENABLE_CERVENY_RAYCEN
+//#define BHC_INFL_ENABLE_CERVENY_RAYCEN
 #ifdef BHC_INFL_ENABLE_CERVENY_RAYCEN
 #define BHCGENINFL				'R'
 #endif
 // 설명 : Enable Cerveny     Cartesian    influence (Type == 'C')
-//#define BHC_INFL_ENABLE_CERVENY_CART
+#define BHC_INFL_ENABLE_CERVENY_CART
 #ifdef BHC_INFL_ENABLE_CERVENY_CART
 #define BHCGENINFL				'C'
 #endif

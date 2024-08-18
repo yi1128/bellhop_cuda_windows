@@ -1,0 +1,123 @@
+bellhop_cuda_windows3D
+
+bellhop_cuda_windows- Gen: 3D, coherent, sgb, cubic
+ frequency =  5.0000e+01 Hz
+Dummy parameter NMedia = 1
+
+    Spline approximation to SSP
+    Attenuation units: dB/wavelength
+    VACUUM
+
+  Depth =   5.00e+03  m
+
+Sound speed profile:
+      z         alphaR      betaR     rho        alphaI     betaI
+     (m)         (m/s)      (m/s)   (g/cm^3)      (m/s)     (m/s)
+0.00e+00 1.55e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+1.23e+03 1.50e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+5.00e+03 1.56e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+
+ RMS roughness =  0.000e+00
+    Perfectly RIGID
+
+__________________________________________________________________________
+
+   Number of Source   x-coordinates, Sx = 2
+   Source   x-coordinates, Sx (km)
+    -2.000000e+01   2.000000e+01 
+
+
+__________________________________________________________________________
+
+   Number of Source   y-coordinates, Sy = 2
+   Source   y-coordinates, Sy (km)
+    -2.000000e+01   2.000000e+01 
+
+
+__________________________________________________________________________
+
+   Number of Source   z-coordinates, Sz = 2
+   Source   z-coordinates, Sz (m)
+     3.470000e+02   6.820000e+02 
+
+
+__________________________________________________________________________
+
+   Number of Receiver z-coordinates, Rz = 51
+   Receiver z-coordinates, Rz (m)
+     0.000000e+00   1.000000e+02   2.000000e+02   3.000000e+02   4.000000e+02 
+     5.000000e+02   6.000000e+02   7.000000e+02   8.000000e+02   9.000000e+02 
+   ...   5.000000e+03
+
+
+__________________________________________________________________________
+
+   Number of Receiver r-coordinates, Rr = 51
+   Receiver r-coordinates, Rr (km)
+     0.000000e+00   2.000000e+00   4.000000e+00   6.000000e+00   8.000000e+00 
+     1.000000e+01   1.200000e+01   1.400000e+01   1.600000e+01   1.800000e+01 
+   ...   1.000000e+02
+
+
+__________________________________________________________________________
+
+   Number of Receiver bearings, theta = 9
+   Receiver bearings, theta (degrees)
+     0.000000e+00   4.000000e+01   8.000000e+01   1.200000e+02   1.600000e+02 
+     2.000000e+02   2.400000e+02   2.800000e+02   3.200000e+02 
+
+(Duplicate angle at 3.600000e+02 degrees removed--this occurs in BELLHOP(3D) too,
+but that version echoes the vector before removing the duplicate)
+
+Coherent TL calculation
+Simple gaussian beams
+Point source (cylindrical coordinates)
+Rectilinear receiver grid: Receivers at Rr[:] x Rz[:]
+3D calculation
+__________________________________________________________________________
+
+   Number of beams in elevation   = 21
+   Beam take-off angles (degrees)
+ -5.120000e+01  -4.608000e+01  -4.096000e+01  -3.584000e+01  -3.072000e+01 
+ -2.560000e+01  -2.048000e+01  -1.536000e+01  -1.024000e+01  -5.120000e+00 
+...   5.120000e+01
+
+   Number of beams in bearing     = 6
+   Beam take-off angles (degrees)
+  0.000000e+00   6.000000e+01   1.200000e+02   1.800000e+02   2.400000e+02 
+  3.000000e+02 
+
+__________________________________________________________________________
+
+
+ Step length,       deltas =  1.0000e+03 m
+
+Maximum ray x-range, Box.x  =  1.0100e+05 m
+Maximum ray y-range, Box.y  =  1.0100e+05 m
+Maximum ray z-range, Box.z  =  5.5000e+03 m
+
+Simple Gaussian beams
+No beam shift in effect
+
+Regular grid for a 3D run
+
+Number of altimetry points in x 2
+ -1.000000e+25   1.000000e+25 
+
+Number of altimetry points in y 2
+ -1.000000e+25   1.000000e+25 
+
+Regular grid for a 3D run
+
+Number of bathymetry points in x 2
+ -1.000000e+25   1.000000e+25 
+
+Number of bathymetry points in y 2
+ -1.000000e+25   1.000000e+25 
+
+Number of source beam pattern points 2
+
+ Angle (degrees)  Power (dB)
+-1.800e+02 0.000e+00
+1.800e+02 0.000e+00
+

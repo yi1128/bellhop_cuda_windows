@@ -2,7 +2,13 @@
 #pragma once
 #include "../common_setup.hpp"
 #include "modemodule.hpp"
+
+#ifdef BHC_BUILD_CUDA
 #include "fieldimpl.h"
+#else
+#include "./bellhop_cxx_windows/mode/fieldimpl.hpp" 
+#endif
+
 #include "../influence.hpp"
 
 #include "./bellhop_cuda_windows/common_run.hpp"

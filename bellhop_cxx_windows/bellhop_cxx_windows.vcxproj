@@ -98,6 +98,7 @@
     <ClInclude Include="..\bellhop_cuda_windows\bhc\math.hpp" />
     <ClInclude Include="..\bellhop_cuda_windows\bhc\platform.hpp" />
     <ClInclude Include="..\bellhop_cuda_windows\bhc\structs.hpp" />
+    <ClInclude Include="..\bellhop_cuda_windows\bhc_define_header.h" />
     <ClInclude Include="..\bellhop_cuda_windows\boundary.hpp" />
     <ClInclude Include="..\bellhop_cuda_windows\common.hpp" />
     <ClInclude Include="..\bellhop_cuda_windows\common_run.hpp" />

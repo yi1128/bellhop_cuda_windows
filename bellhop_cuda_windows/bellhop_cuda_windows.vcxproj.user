@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LocalDebuggerCommandArguments>-2 --mem=8G ../test/cuda/gen_2D_incoherent_cervenycart_n2linear</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>-3 --mem=18G ../test/cuda/munk3d_ray</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
 </Project>

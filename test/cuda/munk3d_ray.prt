@@ -1,0 +1,158 @@
+bellhopcxx3D
+
+bellhopcxx- 3D Munk profile
+ frequency =  5.0000e+01 Hz
+Dummy parameter NMedia = 1
+
+    C-linear approximation to SSP
+    Attenuation units: dB/wavelength
+    VACUUM
+
+  Depth =   2.00e+04  m
+
+Sound speed profile:
+      z         alphaR      betaR     rho        alphaI     betaI
+     (m)         (m/s)      (m/s)   (g/cm^3)      (m/s)     (m/s)
+0.00e+00 1.55e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+2.00e+02 1.53e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+2.50e+02 1.53e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+4.00e+02 1.52e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+6.00e+02 1.51e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+8.00e+02 1.50e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+1.00e+03 1.50e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+1.20e+03 1.50e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+1.40e+03 1.50e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+1.60e+03 1.50e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+1.80e+03 1.50e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+2.00e+03 1.50e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+2.20e+03 1.51e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+2.40e+03 1.51e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+2.60e+03 1.51e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+2.80e+03 1.52e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+3.00e+03 1.52e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+3.20e+03 1.52e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+3.40e+03 1.53e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+3.60e+03 1.53e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+3.80e+03 1.53e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+4.00e+03 1.54e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+4.20e+03 1.54e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+4.40e+03 1.54e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+4.60e+03 1.55e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+4.80e+03 1.55e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+5.00e+03 1.55e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+2.00e+04 1.55e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+
+ RMS roughness =  0.000e+00
+    Bathymetry file selected
+    ACOUSTO-ELASTIC half-space
+  2.00e+04   1.60e+03   0.00e+00 1.80e+00 8.0000e-01 0.0000e+00
+
+__________________________________________________________________________
+
+   Number of Source   x-coordinates, Sx = 1
+   Source   x-coordinates, Sx (km)
+     0.000000e+00 
+
+
+__________________________________________________________________________
+
+   Number of Source   y-coordinates, Sy = 1
+   Source   y-coordinates, Sy (km)
+     0.000000e+00 
+
+
+__________________________________________________________________________
+
+   Number of Source   z-coordinates, Sz = 1
+   Source   z-coordinates, Sz (m)
+     1.000000e+03 
+
+
+__________________________________________________________________________
+
+   Number of Receiver z-coordinates, Rz = 1
+   Receiver z-coordinates, Rz (m)
+     1.000000e+03 
+
+
+__________________________________________________________________________
+
+   Number of Receiver r-coordinates, Rr = 1001
+   Receiver r-coordinates, Rr (km)
+     0.000000e+00   1.000000e-01   2.000000e-01   3.000000e-01   4.000000e-01 
+     5.000000e-01   6.000000e-01   7.000000e-01   8.000000e-01   9.000001e-01 
+   ...   1.000000e+02
+
+
+__________________________________________________________________________
+
+   Number of Receiver bearings, theta = 5
+   Receiver bearings, theta (degrees)
+     0.000000e+00   7.200000e+01   1.440000e+02   2.160000e+02   2.880000e+02 
+   
+
+(Duplicate angle at 3.600000e+02 degrees removed--this occurs in BELLHOP(3D) too,
+but that version echoes the vector before removing the duplicate)
+
+Ray trace run
+Geometric hat beams in Cartesian coordinates
+Point source (cylindrical coordinates)
+Rectilinear receiver grid: Receivers at Rr[:] x Rz[:]
+3D calculation
+__________________________________________________________________________
+
+   Number of beams in elevation   = 25
+   Beam take-off angles (degrees)
+ -1.466000e+01  -1.321583e+01  -1.177167e+01  -1.032750e+01  -8.883333e+00 
+ -7.439167e+00  -5.995000e+00  -4.550833e+00  -3.106667e+00  -1.662500e+00 
+...   2.000000e+01
+
+   Number of beams in bearing     = 5
+   Beam take-off angles (degrees)
+  0.000000e+00   7.500000e+01   1.500000e+02   2.250000e+02   3.000000e+02 
+
+
+__________________________________________________________________________
+
+
+ Step length,       deltas =  2.0000e+03 m
+
+Maximum ray x-range, Box.x  =  9.9100e+04 m
+Maximum ray y-range, Box.y  =  9.9100e+04 m
+Maximum ray z-range, Box.z  =  2.0500e+04 m
+
+Geometric beam, hat-shaped, Cart. coord.
+No beam shift in effect
+Regular grid for a 3D run
+
+Number of altimetry points in x 2
+ -1.000000e+25   1.000000e+25 
+
+Number of altimetry points in y 2
+ -1.000000e+25   1.000000e+25 
+
+__________________________________________________________________________
+
+Using bottom-bathymetry file
+Regular grid for a 3D run
+
+Number of bathymetry points in x 41
+ -1.000000e+02  -9.500000e+01  -9.000000e+01  -8.500000e+01  -8.000000e+01 
+ -7.500000e+01  -7.000000e+01  -6.500000e+01  -6.000000e+01  -5.500000e+01 
+ -5.000000e+01  -4.500000e+01  -4.000000e+01  -3.500000e+01  -3.000000e+01 
+ -2.500000e+01  -2.000000e+01  -1.500000e+01  -1.000000e+01  -5.000000e+00 
+  0.000000e+00 ...   1.000000e+02
+
+Number of bathymetry points in y 41
+ -1.000000e+02  -9.500000e+01  -9.000000e+01  -8.500000e+01  -8.000000e+01 
+ -7.500000e+01  -7.000000e+01  -6.500000e+01  -6.000000e+01  -5.500000e+01 
+ -5.000000e+01  -4.500000e+01  -4.000000e+01  -3.500000e+01  -3.000000e+01 
+ -2.500000e+01  -2.000000e+01  -1.500000e+01  -1.000000e+01  -5.000000e+00 
+  0.000000e+00 ...   1.000000e+02
+
+Number of source beam pattern points 2
+
+ Angle (degrees)  Power (dB)
+-1.800e+02 0.000e+00
+1.800e+02 0.000e+00
+

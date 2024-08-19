@@ -173,5 +173,6 @@
     <ClInclude Include="..\bellhop_cuda_windows\util\unformattedio.hpp">
       <Filter>util</Filter>
     </ClInclude>
+    <ClInclude Include="..\bellhop_cuda_windows\bhc_define_header.h" />
   </ItemGroup>
 </Project>

@@ -6,6 +6,7 @@
 #include "../trace.hpp"
 #include "fieldimpl.h"
 
+#ifdef BHC_BUILD_CUDA
 namespace bhc { namespace mode {
 
 #define NUM_THREADS 256
@@ -107,4 +108,4 @@ template<> void RunFieldModesImpl<GENCFG, BHCGENO3D, BHCGENR3D>(
 }
 */
 }} // namespace bhc::mode
-
+#endif

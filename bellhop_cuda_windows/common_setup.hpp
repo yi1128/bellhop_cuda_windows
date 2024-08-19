@@ -116,10 +116,12 @@ inline bool endswith(const std::string &source, const std::string &target)
 }
 
 } // namespace bhc
-
-#define _BHC_INCLUDING_COMPONENTS_ 1
+#ifdef BHC_BUILD_CUDA
 #include "cuda_runtime.h"
 #include "device_launch_parameters.h"
+#endif
+
+#define _BHC_INCLUDING_COMPONENTS_ 1
 #include "util/ldio.hpp"
 #include "util/directio.hpp"
 #include "util/unformattedio.hpp"

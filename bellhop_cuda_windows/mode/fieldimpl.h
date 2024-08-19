@@ -4,13 +4,13 @@
 
 #include "../common.hpp"
 
-
+#ifdef BHC_BUILD_CUDA
 namespace bhc { namespace mode {
 
     template<typename CFG, bool O3D, bool R3D> void FieldModesWorker(
         bhcParams<BHCGENO3D>& params, bhcOutputs<BHCGENO3D, BHCGENR3D>& outputs, ErrState* errState);
 
-    void FieldModesWorkerLaunch(bhcParams<BHCGENO3D>& params, bhcOutputs<BHCGENO3D, BHCGENR3D>& outputs, ErrState* errState);
+    //void FieldModesWorkerLaunch(bhcParams<BHCGENO3D>& params, bhcOutputs<BHCGENO3D, BHCGENR3D>& outputs, ErrState* errState);
 
     template<typename CFG, bool O3D, bool R3D> void RunFieldModesImpl(
         bhcParams<BHCGENO3D>& params, bhcOutputs<BHCGENO3D, BHCGENR3D>& outputs);
@@ -26,3 +26,4 @@ namespace bhc { namespace mode {
     extern template void RunFieldModesSelInfl<true, true>(
         bhcParams<true>& params, bhcOutputs<true, true>& outputs);
 }} // namespace bhc::mode
+#endif

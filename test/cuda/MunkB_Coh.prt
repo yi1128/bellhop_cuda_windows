@@ -1,0 +1,110 @@
+bellhop_cuda_windows
+
+bellhop_cuda_windows- Munk profile, coherent
+ frequency =  5.0000e+01 Hz
+Dummy parameter NMedia = 1
+
+    Spline approximation to SSP
+    Attenuation units: dB/wavelength
+    VACUUM
+
+  Depth =   5.00e+03  m
+
+Sound speed profile:
+      z         alphaR      betaR     rho        alphaI     betaI
+     (m)         (m/s)      (m/s)   (g/cm^3)      (m/s)     (m/s)
+0.00e+00 1.55e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+2.00e+02 1.53e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+2.50e+02 1.53e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+4.00e+02 1.52e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+6.00e+02 1.51e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+8.00e+02 1.50e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+1.00e+03 1.50e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+1.20e+03 1.50e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+1.40e+03 1.50e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+1.60e+03 1.50e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+1.80e+03 1.50e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+2.00e+03 1.50e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+2.20e+03 1.51e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+2.40e+03 1.51e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+2.60e+03 1.51e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+2.80e+03 1.52e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+3.00e+03 1.52e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+3.20e+03 1.52e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+3.40e+03 1.53e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+3.60e+03 1.53e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+3.80e+03 1.53e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+4.00e+03 1.54e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+4.20e+03 1.54e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+4.40e+03 1.54e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+4.60e+03 1.55e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+4.80e+03 1.55e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+5.00e+03 1.55e+03 0.00e+00 1.00e+00 0.0000e+00 0.0000e+00
+
+ RMS roughness =  0.000e+00
+    ACOUSTO-ELASTIC half-space
+  5.00e+03   1.60e+03   0.00e+00 1.80e+00 8.0000e-01 0.0000e+00
+
+__________________________________________________________________________
+
+   Number of Source   z-coordinates, Sz = 1
+   Source   z-coordinates, Sz (m)
+     1.000000e+03 
+
+
+__________________________________________________________________________
+
+   Number of Receiver z-coordinates, Rz = 501
+   Receiver z-coordinates, Rz (m)
+     0.000000e+00   1.000000e+01   2.000000e+01   3.000000e+01   4.000000e+01 
+     5.000000e+01   6.000000e+01   7.000000e+01   8.000000e+01   9.000000e+01 
+   ...   5.000000e+03
+
+
+__________________________________________________________________________
+
+   Number of Receiver r-coordinates, Rr = 1001
+   Receiver r-coordinates, Rr (km)
+     0.000000e+00   1.000000e-01   2.000000e-01   3.000000e-01   4.000000e-01 
+     5.000000e-01   6.000000e-01   7.000000e-01   8.000000e-01   9.000001e-01 
+   ...   1.000000e+02
+
+
+Coherent TL calculation
+Geometric hat beams in Cartesian coordinates
+Point source (cylindrical coordinates)
+Rectilinear receiver grid: Receivers at Rr[:] x Rz[:]
+__________________________________________________________________________
+
+   Number of beams in elevation   = 1000
+   Beam take-off angles (degrees)
+ -2.030000e+01  -2.025936e+01  -2.021872e+01  -2.017808e+01  -2.013744e+01 
+ -2.009680e+01  -2.005616e+01  -2.001552e+01  -1.997487e+01  -1.993423e+01 
+...   2.030000e+01
+
+__________________________________________________________________________
+
+
+ Step length,       deltas =  5.0000e+01 m
+
+Maximum ray depth, Box.y  =  5.5000e+03 m
+Maximum ray range, Box.x  =  1.0100e+02km
+
+Geometric hat beams
+No beam shift in effect
+
+Piecewise linear interpolation
+Number of altimetry points = 2
+
+ Range (km)  Depth (m)
+Piecewise linear interpolation
+Number of bathymetry points = 2
+Short format (bathymetry only)
+
+ Range (km)  Depth (m)
+Number of source beam pattern points 2
+
+ Angle (degrees)  Power (dB)
+-1.800e+02 0.000e+00
+1.800e+02 0.000e+00
+
